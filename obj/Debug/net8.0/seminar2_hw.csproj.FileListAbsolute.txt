@@ -1,0 +1,14 @@
+F:\Geek_brains\c#\seminar2_hw\bin\Debug\net8.0\seminar2_hw.exe
+F:\Geek_brains\c#\seminar2_hw\bin\Debug\net8.0\seminar2_hw.deps.json
+F:\Geek_brains\c#\seminar2_hw\bin\Debug\net8.0\seminar2_hw.runtimeconfig.json
+F:\Geek_brains\c#\seminar2_hw\bin\Debug\net8.0\seminar2_hw.dll
+F:\Geek_brains\c#\seminar2_hw\bin\Debug\net8.0\seminar2_hw.pdb
+F:\Geek_brains\c#\seminar2_hw\obj\Debug\net8.0\seminar2_hw.GeneratedMSBuildEditorConfig.editorconfig
+F:\Geek_brains\c#\seminar2_hw\obj\Debug\net8.0\seminar2_hw.AssemblyInfoInputs.cache
+F:\Geek_brains\c#\seminar2_hw\obj\Debug\net8.0\seminar2_hw.AssemblyInfo.cs
+F:\Geek_brains\c#\seminar2_hw\obj\Debug\net8.0\seminar2_hw.csproj.CoreCompileInputs.cache
+F:\Geek_brains\c#\seminar2_hw\obj\Debug\net8.0\seminar2_hw.dll
+F:\Geek_brains\c#\seminar2_hw\obj\Debug\net8.0\refint\seminar2_hw.dll
+F:\Geek_brains\c#\seminar2_hw\obj\Debug\net8.0\seminar2_hw.pdb
+F:\Geek_brains\c#\seminar2_hw\obj\Debug\net8.0\seminar2_hw.genruntimeconfig.cache
+F:\Geek_brains\c#\seminar2_hw\obj\Debug\net8.0\ref\seminar2_hw.dll
