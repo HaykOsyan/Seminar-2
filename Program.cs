@@ -17,30 +17,61 @@
 
 // Задача 2: Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер координатной четверти плоскости, в которой находится эта точка.
 
-Console.WriteLine("Enter coordinate x please");
-int x = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter coordinate y please");
-int y = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter coordinate x please");
+// int x = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter coordinate y please");
+// int y = Convert.ToInt32(Console.ReadLine());
 
-static void WhichQuarterIsObject(int x, int y)
+// static void WhichQuarterIsObject(int x, int y)
+// {
+//     string text = "the object is in";
+//     if (x > 0 && y > 0)
+//     {
+//         System.Console.WriteLine($"{text} 1st quarter");
+//     }
+//     else if (x > 0 && y < 0)
+//     {
+//         System.Console.WriteLine($"{text} 2st quarter");
+//     }
+//     else if (x < 0 && y < 0)
+//     {
+//         System.Console.WriteLine($"{text} 3st quarter");
+//     }
+//     else
+//     {
+//         System.Console.WriteLine($"{text} 4st quarter");
+//     }
+// }
+
+// WhichQuarterIsObject(x,y);
+
+// Задача 3: Напишите программу, которая принимает на вход целое число из отрезка [10, 99] и показывает наибольшую цифру числа.
+
+Console.WriteLine("Enter number between 10 and 99 please");
+int number = Convert.ToInt32(Console.ReadLine());
+
+static void BiggestDigit(int number)
 {
-    string text = "the object is in";
-    if (x > 0 && y > 0)
+    int firstDigit = number / 10;
+    int lastDigit = number % 10;
+    if (firstDigit > lastDigit)
     {
-        System.Console.WriteLine($"{text} 1st quarter");
+        System.Console.WriteLine(firstDigit);
     }
-    else if (x > 0 && y < 0)
+    else if (firstDigit == lastDigit)
     {
-        System.Console.WriteLine($"{text} 2st quarter");
-    }
-    else if (x < 0 && y < 0)
-    {
-        System.Console.WriteLine($"{text} 3st quarter");
+        System.Console.WriteLine("The digits are equal");
     }
     else
     {
-        System.Console.WriteLine($"{text} 4st quarter");
+        System.Console.WriteLine(lastDigit);
     }
 }
-
-WhichQuarterIsObject(x,y);
+if (number < 10 || number > 99)
+{
+    System.Console.WriteLine("Wrong number");
+}
+else
+{
+    BiggestDigit(number);
+}
