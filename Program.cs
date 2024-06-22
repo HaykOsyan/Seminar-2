@@ -6,11 +6,11 @@ static void CheckIfDivide(int a, int b, int number)
 {
     if (number % a == 0 && number % b == 0)
     {
-        System.Console.WriteLine("div");
+        System.Console.WriteLine($"{number} делиться и на {a} и на {b}");
     }
     else
     {
-        System.Console.WriteLine("no div");
+        System.Console.WriteLine($"{number} не  делиться одновременно и на {a} и на {b}");
     }
 }
 CheckIfDivide(7, 23, number);
