@@ -47,31 +47,61 @@
 
 // Задача 3: Напишите программу, которая принимает на вход целое число из отрезка [10, 99] и показывает наибольшую цифру числа.
 
-Console.WriteLine("Enter number between 10 and 99 please");
+// Console.WriteLine("Enter number between 10 and 99 please");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// static void BiggestDigit(int number)
+// {
+//     int firstDigit = number / 10;
+//     int lastDigit = number % 10;
+//     if (firstDigit > lastDigit)
+//     {
+//         System.Console.WriteLine(firstDigit);
+//     }
+//     else if (firstDigit == lastDigit)
+//     {
+//         System.Console.WriteLine("The digits are equal");
+//     }
+//     else
+//     {
+//         System.Console.WriteLine(lastDigit);
+//     }
+// }
+// if (number < 10 || number > 99)
+// {
+//     System.Console.WriteLine("Wrong number");
+// }
+// else
+// {
+//     BiggestDigit(number);
+// }
+
+// Задача 4: Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
+
+Console.WriteLine("Enter natural number please");
 int number = Convert.ToInt32(Console.ReadLine());
 
-static void BiggestDigit(int number)
+static void NaturanNumberByDigits(int number)
 {
-    int firstDigit = number / 10;
-    int lastDigit = number % 10;
-    if (firstDigit > lastDigit)
+    string numberDigits = "";
+    while (number > 0)
     {
-        System.Console.WriteLine(firstDigit);
-    }
-    else if (firstDigit == lastDigit)
-    {
-        System.Console.WriteLine("The digits are equal");
-    }
-    else
-    {
-        System.Console.WriteLine(lastDigit);
-    }
+        int remain = number % 10;
+        number = (number - remain) / 10;
+        System.Console.WriteLine(remain);
+        System.Console.WriteLine(number);
+        // numberDigits += remain+",";
+        if (numberDigits.Length > 0)
+        {
+            numberDigits = string.Concat(remain, ($",{numberDigits}"));
+        }
+        else
+        {
+            numberDigits += remain;
+        }
+        System.Console.WriteLine(numberDigits);
+    };
 }
-if (number < 10 || number > 99)
-{
-    System.Console.WriteLine("Wrong number");
-}
-else
-{
-    BiggestDigit(number);
-}
+
+NaturanNumberByDigits(number);
+
